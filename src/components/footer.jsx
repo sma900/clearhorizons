@@ -4,14 +4,9 @@ import logo from '../assets/logo.jpeg'; // Replace with the correct path to your
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900 text-white py-8 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
-      {/* Logo Section */}
-      <div className="flex items-center mb-6 md:mb-0">
-        <img src={logo} alt="Logo" className="h-12 w-auto object-contain" />
-      </div>
-
-      {/* Social Media Links */}
-      <div className="flex flex-col items-center md:items-end">
+    <footer className="w-full bg-gray-900 text-white py-8 px-4 md:px-8 flex flex-col items-center md:flex-row md:justify-between">
+      {/* Left Section - Social Media Links */}
+      <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
         <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
         <div className="flex gap-6 mb-4">
           <a
@@ -39,8 +34,16 @@ const Footer = () => {
             <FaFacebook size={24} />
           </a>
         </div>
+      </div>
 
-        {/* Terms and Privacy Links */}
+      {/* Center Section - Logo and Text */}
+      <div className="flex flex-col items-center mb-6 md:mb-0">
+        <img src={logo} alt="Logo" className="h-20 w-auto object-contain mb-2" />
+        <span className="text-2xl font-semibold text-center">Clear Horizons</span> {/* Centered Text */}
+      </div>
+
+      {/* Right Section - Terms and Privacy Links */}
+      <div className="flex flex-col items-center md:items-end">
         <div className="flex flex-col md:flex-row gap-4">
           <a
             href="/terms-and-conditions"
