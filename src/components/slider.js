@@ -33,66 +33,19 @@ const Slider = () => {
   }, [direction]); // Re-run when direction changes
 
   return (
-    <div style={styles.sliderContainer}>
+    <div className="w-screen h-screen md:h-60vh lg:h-50vh overflow-hidden bg-black">
       <div
-        style={{
-          ...styles.slider,
-          transform: `translateX(-${currentIndex * 100}%)`,
-        }}
+        className="flex transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-          <div key={index} style={styles.imageContainer}>
-            <img src={image} alt={`Slide ${index}`} style={styles.image} loading="lazy" />
+          <div key={index} className="w-screen h-screen flex justify-center items-center flex-shrink-0">
+            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-contain" loading="lazy" />
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-const styles = {
-  sliderContainer: {
-    width: "100vw", // Full width of the viewport
-    height: "50vh", // Full height of the viewport
-    overflow: "hidden",
-    margin: "auto",
-    position: "relative",
-    backgroundColor: "#000", // Optional: Add a background color to contrast images
-  },
-  slider: {
-    display: "flex",
-    transition: "transform 1s ease-in-out", // Smooth sliding effect
-  },
-  imageContainer: {
-    width: "100vw", // Full viewport width
-    height: "100vh", // Full viewport height
-    display: "flex",
-    justifyContent: "center", // Center the image horizontally
-    alignItems: "center", // Center the image vertically
-    flexShrink: 0,
-  },
-  image: {
-    width: "100%", // Make the image span the full width of the container
-    height: "100%", // Make the image span the full height of the container
-    objectFit: "cover", // Ensure the image covers the entire container without distortion
-  },
-  // Responsive styling using media queries
-  '@media screen and (max-width: 768px)': {
-    sliderContainer: {
-      height: "60vh", // For tablets, adjust height to 60% of the viewport
-    },
-    image: {
-      objectFit: "cover", // Ensure images still cover the container
-    },
-  },
-  '@media screen and (max-width: 480px)': {
-    sliderContainer: {
-      height: "50vh", // For smaller phones, adjust height further
-    },
-    image: {
-      objectFit: "cover", // Ensure images still cover the container
-    },
-  },
 };
 
 export default Slider;
