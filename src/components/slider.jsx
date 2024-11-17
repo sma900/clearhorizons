@@ -33,7 +33,7 @@ const Slider = () => {
   }, [direction]); // Re-run when direction changes
 
   return (
-    <div className="w-screen h-screen md:h-60vh lg:h-50vh overflow-hidden bg-black">
+    <div className="w-screen h-screen md:h-60vh lg:h-50vh overflow-hidden">
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
