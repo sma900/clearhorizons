@@ -22,9 +22,7 @@ const AboutUs = () => {
     />
   </div>
   <h3 className="text-xl font-semibold mt-4">Syed Mohammad Ibrahim Ali</h3>
-  <p className="text-sm font-light mt-2">
-    Dedicated to creating opportunities for everyone.
-  </p>
+  
 </div>
 
 <div className="text-center">
@@ -36,18 +34,20 @@ const AboutUs = () => {
     />
   </div>
   <h3 className="text-xl font-semibold mt-4">Syed Moaaz Ahmed</h3>
-  <p className="text-sm font-light mt-2">
-    Focused on building a more inclusive future.
-  </p>
+  
 </div>
+   
 
+      </div>
+      <div>
+      "Syed Mohammad Ibrahim Ali and Syed Moaaz Ahmed are the founders behind this initiative. They envisioned Clear Horizons as a platform to bridge the gap between talented blind individuals and employers, empowering them to showcase their skills and secure meaningful employment. Their mission is to create an inclusive future where everyone, regardless of their capabilities, has the opportunity to thrive."
       </div>
 
       {/* Motives Section */}
       <div className="mt-12">
         <h3 className="text-3xl font-bold text-center">Our Motive</h3>
         <p className="mt-6 text-lg leading-relaxed md:text-xl text-center md:text-left">
-          Clear Horizons is more than an initiative—it’s a movement to bridge the gap between the visually 
+          Clear Horizons is more than an initiative—it&apos;s a movement to bridge the gap between the visually 
           impaired and meaningful employment. We believe that every person, regardless of their abilities, 
           deserves the chance to shine in their chosen field. 
           By creating direct channels of communication between employers and blind individuals, we aim to 
@@ -63,7 +63,7 @@ const AboutUs = () => {
           initiative designed to elevate the employability of blind individuals. Through specialized training 
           sessions in cutting-edge technology, soft skills, and industry-focused certifications, we aim to 
           transform our candidates into pioneers in their fields. 
-          Furthermore, we’re building a vibrant **community network** where collaboration, mentorship, 
+          Furthermore, we&apos;re building a vibrant **community network** where collaboration, mentorship, 
           and growth opportunities flourish, ensuring that the impact of our mission grows exponentially.
         </p>
       </div>
@@ -71,9 +71,9 @@ const AboutUs = () => {
       {/* Call to Action */}
       <div className="mt-12 text-center">
         <p className="text-lg md:text-xl font-light">
-          Together, let’s redefine possibilities and create a world where everyone thrives.
+          Together, let&apos;s redefine possibilities and create a world where everyone thrives.
         </p>
-        <button className="mt-6 bg-blue-700 hover:bg-purple-600 transition text-white py-2 px-6 rounded-full font-semibold text-lg">
+        <button className="mt-6 bg-black hover:bg-blue-500 transition text-white py-2 px-6 rounded-full font-semibold text-lg">
           Join Our Mission
         </button>
       </div>

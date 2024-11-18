@@ -9,9 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      {/* <Slider></Slider>
-      <Footer /> */
-      <AboutUs />
+      {/* { <Slider></Slider> */
+      <Footer />
+      // <AboutUs/>
+      
       }
 
       </header>
