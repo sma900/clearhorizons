@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       {/* { <Slider></Slider> */
-      <Footer />
-      // <AboutUs/>
+      // <Footer />
+      <AboutUs/>
       
       }
 
